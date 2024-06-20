@@ -5,11 +5,13 @@ const express = require('express');
 const app = express();
 
 // PARSING REQUEST BODY (application/json) ===> convert string to object ===> req.body
+// built-in middleware: express.json() ===> (req,res,next) => { }
 app.use(express.json());
 
 // app.use(bodyParser())
 
 // PARSING REQUEST BODY (appication/x-www-form-urlencoded)  ===> convert string to object ===> req.body
+// built-in middleware: express.urlencoded() ===> (req,res,next) => {  }
 app.use(express.urlencoded({ extended: true }));
 
 // PARSING REQUEST BODY (multipart/form-data) ===> convert string to object, upload binary data
@@ -50,7 +52,7 @@ app.delete('/delete-user/:zxc/:abcd/:age', (req, res) => {
 app.put('/update-product', (req, res) => {});
 
 // handle PATCH /change-password
-app.patch('/change-password', (req, res) => {});
+app.patch('/change-password', (req, res, next) => {});
 
 const handleRequest = (req, res) => {};
 app.get('/basic', handleRequest);
