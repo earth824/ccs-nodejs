@@ -1,0 +1,28 @@
+RESOURCE POST, COMMENT
+*** POST
+GET ALL POST
+GET /posts
+
+CREATE POST
+POST /posts
+REQUEST BODY: author, title, body
+
+UPDATE POST
+PATCH /posts/:postId
+
+DELETE POST
+DELETE /posts/:postId
+
+*** COMMENT
+GET ALL COMMENT BY POST ID
+GET /posts/:postId/comments
+
+CREATE COMMENT
+POST /posts/:postId/comments
+REQUEST BODY: commenter, comment
+
+UPDATE COMMENT
+PATCH /posts/:postId/comments/:commentId
+
+DELETE COMMENT
+DELETE /posts/:postId/comments/:commentId
