@@ -1,0 +1,10 @@
+init nodejs project: pnpm init
+install prisma module: pnpm add -D prisma
+init schema.prisma file: pnpm prisma init
+
+Update DATABASE_URL in .env file
+Update datasource db provider in schema.prisma
+
+introspect to update schema.prisma: pnpm prisma db pull
+
+generate prisma client: pnpm prisma generate

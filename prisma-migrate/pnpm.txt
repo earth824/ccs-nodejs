@@ -1,0 +1,8 @@
+                      npm                     pnpm
+init                  npm init -y             pnpm init
+install package       npm i [package-name]    pnpm add [package-name]
+install               npm i                   pnpm i
+unstall               npm un                  pnpm rm
+
+run script            npm run [script-name]   pnpm [script-name]
+exec command          npx [command]           pnpm [command]

@@ -1,0 +1,7 @@
+init nodejs project: pnpm init
+install prisma module: pnpm add -D prisma
+init schema.prisma file: pnpm prisma init
+
+generate database: 
+  - pnpm prisma db push
+  - pnpm prisma migrate dev --name [migration-history-name]
